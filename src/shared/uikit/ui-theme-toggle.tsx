@@ -16,9 +16,9 @@ export function ThemeToggler({
     <div>
       <UiButton variant="link" className={cn('', className)} onClick={onClick}>
         {theme === 'light' ? (
-          <SunIcon className="text-surface-foreground size-6" />
+          <SunIcon className="text-foreground size-6" />
         ) : (
-          <SaturnIcon className="text-surface-foreground size-6" />
+          <SaturnIcon className="text-foreground size-6" />
         )}
       </UiButton>
     </div>
