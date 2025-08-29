@@ -12,7 +12,8 @@ export const useCO2Fetch = () => {
     setLoading(true);
     setError(null);
 
-    fetchCO2({ signal: controller.signal })
+    // fetchCO2({ signal: controller.signal })
+    fetchCO2()
       .then(async (json) => {
         await new Promise((r) => setTimeout(r, 2000));
         setCO2Data(json);
