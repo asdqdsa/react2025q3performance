@@ -1,4 +1,4 @@
-import { createContext, useContext } from 'react';
+import { createContext, use } from 'react';
 
 interface IThemeProvider {
   theme: 'dark' | 'light';
@@ -10,7 +10,7 @@ export const ThemeContext = createContext<IThemeProvider | undefined>(
 );
 
 export const useThemeContext = () => {
-  const ctx = useContext(ThemeContext);
+  const ctx = use(ThemeContext);
   if (!ctx) {
     throw new Error('useThemeContext must be used within ThemeProvider');
   }
