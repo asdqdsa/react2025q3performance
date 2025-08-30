@@ -94,3 +94,16 @@
   --color-input: #262626;
   --color-ring: #56aca9;
 }
+
+@keyframes flash {
+  0% {
+    background-color: #56aca9;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.flash-bg {
+  animation: flash 0.6s ease;
+}
