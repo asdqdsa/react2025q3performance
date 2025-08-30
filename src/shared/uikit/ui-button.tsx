@@ -27,7 +27,7 @@ export function UiButton({
       type={type}
       className={cn(
         'flex cursor-pointer items-center justify-center rounded-sm p-2 transition-colors',
-        'disabled: disabled:opacity-50',
+        'disabled:opacity-50',
         {
           default:
             'bg-primary text-primary-foreground enabled:hover:bg-primary/90 shadow-xs',
