@@ -1,5 +1,5 @@
 import { CONFIG, ENDPOINTS } from '@/shared/model/config';
-import type { CO2CountriesData } from '../types';
+import type { CO2CountriesData } from '../model/types';
 
 export async function fetchCO2(): Promise<CO2CountriesData> {
   try {

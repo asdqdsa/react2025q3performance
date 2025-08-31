@@ -1,8 +1,8 @@
-import { Header } from '@/app/widgets/Header';
-import { Main } from '@/app/widgets/Main';
 import { DataProvider } from '@/shared/model/context/DataProvider';
 import { StateProvider } from '@/shared/model/context/StateProvider';
 import { Suspense } from 'react';
+import { Header } from './Header';
+import { Main } from './Main';
 
 export function Layout() {
   return (

@@ -1,6 +1,6 @@
+import { fetchCO2 } from '@/entities/api/fetch';
+import type { CO2CountriesData } from '@/entities/model/types';
 import { useEffect, useState } from 'react';
-import { fetchCO2 } from '../api/fetchData';
-import type { CO2CountriesData } from '../types';
 
 export const useCO2Fetch = () => {
   const [cO2data, setCO2Data] = useState<CO2CountriesData | null>(null);
