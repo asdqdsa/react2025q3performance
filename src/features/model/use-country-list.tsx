@@ -1,6 +1,6 @@
+import { useDataContext } from '@/shared/model/context/use-data-ctx';
+import { useStateContext } from '@/shared/model/context/use-state-ctx';
 import { useMemo } from 'react';
-import { useDataContext } from './context/use-data-ctx';
-import { useStateContext } from './context/use-state-ctx';
 
 export function useCountryList() {
   const data = useDataContext();

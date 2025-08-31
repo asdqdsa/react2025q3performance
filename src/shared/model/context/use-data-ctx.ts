@@ -1,4 +1,4 @@
-import type { CO2CountriesData } from '@/features/types';
+import type { CO2CountriesData } from '@/entities/model/types';
 import { createContext, use } from 'react';
 
 export const DataContext = createContext<undefined | CO2CountriesData>(
