@@ -122,7 +122,9 @@ export const List = memo(function List({
             <div>{selectedYear}</div>
             <div>{record?.population ?? 'N/A'}</div>
             <div>{record?.co2_per_capita ?? 'N/A'}</div>
-            <div>{iso_code ?? 'N/A'}</div>
+            <div key={`${iso_code ?? country}-${selectedYear}`}>
+              {iso_code ?? 'N/A'}
+            </div>
           </div>
         );
       })}

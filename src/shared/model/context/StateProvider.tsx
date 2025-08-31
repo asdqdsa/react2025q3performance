@@ -16,9 +16,6 @@ const initialState = {
   year: 2023,
   search: '',
   sort: 'ASC',
-  population: 0,
-  co2: 0,
-  co2_per_capita: 0,
 } as const;
 function reducer(state: State, { type, payload }: Action): State {
   switch (type) {

@@ -1,4 +1,4 @@
-if (import.meta.env.DEV) {
+if (import.meta.env.DEV && !import.meta.env.VITE_REACT_SCAN) {
   const { scan } = await import('react-scan');
   scan({
     enabled: true,
