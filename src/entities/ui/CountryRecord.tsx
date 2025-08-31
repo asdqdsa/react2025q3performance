@@ -11,7 +11,7 @@ export const CountryRecord = memo(function CountryRecord({
 }: {
   isoCode: string;
   country: string;
-  co2?: number;
+  co2?: number | string;
   year: number;
   population?: number;
   co2PerCapita?: number;
@@ -23,7 +23,7 @@ export const CountryRecord = memo(function CountryRecord({
       <RecordCell value={year} />
       <RecordCell value={population ?? 'N/A'} />
       <RecordCell value={co2PerCapita ?? 'N/A'} />
-      <RecordCell value={isoCode} />
+      <RecordCell value={isoCode ?? 'N/A'} />
     </div>
   );
 });
