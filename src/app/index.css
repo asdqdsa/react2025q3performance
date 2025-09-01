@@ -1,1 +1,109 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+@custom-variant light (&:where([data-theme='light'], [data-theme='light'] *));
+
+@theme {
+  --color-background: #000;
+  --color-background-secondary: #0a0a0a;
+  --color-foreground: #f5f5f5;
+
+  --color-card: #1a1a1a;
+  --color-card-foreground: #f5f5f5;
+
+  --color-popover: #1a1a1a;
+  --color-popover-foreground: #f5f5f5;
+
+  --color-primary: #56aca9;
+  --color-primary-foreground: #0a0a0a;
+
+  --color-secondary: #27272a;
+  --color-secondary-foreground: #f5f5f5;
+
+  --color-muted: #262626;
+  --color-muted-foreground: #a3a3a3;
+
+  --color-accent: #262626;
+  --color-accent-foreground: #f5f5f5;
+
+  --color-destructive: #8b2f3d;
+  --color-destructive-foreground: #f5f5f5;
+
+  --color-border: #27272a;
+  --color-input: #262626;
+  --color-ring: #56aca9;
+}
+
+[data-theme='light'] {
+  --color-background: #ffffff;
+  --color-background-secondary: #fff;
+  --color-foreground: #0a0a0a;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0a0a0a;
+
+  --color-primary: #56aca9;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #f4f4f5;
+  --color-secondary-foreground: #0a0a0a;
+
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+
+  --color-accent: #f4f4f5;
+  --color-accent-foreground: #0a0a0a;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+
+  --color-border: #e5e5e5;
+  --color-input: #e5e5e5;
+  --color-ring: #56aca9;
+}
+
+[data-theme='dark'] {
+  --color-background: #000;
+  --color-background-secondary: #0a0a0a;
+  --color-foreground: #f5f5f5;
+
+  --color-card: #1a1a1a;
+  --color-card-foreground: #f5f5f5;
+
+  --color-popover: #1a1a1a;
+  --color-popover-foreground: #f5f5f5;
+
+  --color-primary: #56aca9;
+  --color-primary-foreground: #0a0a0a;
+
+  --color-secondary: #27272a;
+  --color-secondary-foreground: #f5f5f5;
+
+  --color-muted-foreground: #a3a3a3;
+
+  --color-accent: #262626;
+  --color-accent-foreground: #f5f5f5;
+
+  --color-destructive: #8b2f3d;
+  --color-destructive-foreground: #f5f5f5;
+
+  --color-border: #27272a;
+  --color-input: #262626;
+  --color-ring: #56aca9;
+}
+
+@keyframes flash {
+  0% {
+    background-color: var(--color-accent);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.flash-bg {
+  animation: flash 0.6s ease-in-out;
+}

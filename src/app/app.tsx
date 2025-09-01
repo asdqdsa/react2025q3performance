@@ -1,23 +1,11 @@
-import { cn } from '@/shared/lib/cn';
-import { useState } from 'react';
+import { ThemeProvider } from '@/shared/model/context/ThemeProvider';
+import { Layout } from './layout/Layout';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div
-      className={cn(
-        'flex h-screen flex-col items-center justify-center bg-gray-500'
-      )}
-    >
-      <button
-        className="cursor-pointer font-bold text-black"
-        onClick={() => setCount(count + 1)}
-      >
-        [ CENTERED ]
-      </button>
-      <div>{count}</div>
-    </div>
+    <ThemeProvider>
+      <Layout />
+    </ThemeProvider>
   );
 }
 

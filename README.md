@@ -1,20 +1,8 @@
-# Vite, React, TypeScript, Tailwind CSS
+# PERFORMANCE SHORT SUMMARY:
 
-### Getting Started
+- Initial render improved by 7%
+- Search improved by 33%
+- Select Year slowed down by 75%
+- Sort improved by 50%
 
-1. **Install pnpm globally:**
-
-   ```bash
-   npm install -g pnpm
-   ```
-
-2. Install project dependencies:
-
-   ```bash
-   pnpm install
-   ```
-
-3. Start the development server:
-   ```bash
-   pnpm dev
-   ```
+FULL PERFORMANCE REPORT CAN BE FOUND: [./docs/PERFORMANCE.md](./docs/PERFORMANCE.md)
